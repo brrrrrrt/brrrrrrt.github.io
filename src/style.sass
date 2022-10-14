@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap')
-$darkblue: #145DA0
-$darkblue: #0C2D48
-$babyblue: #B1D4E0
-$mistyblue: #E3E8E9
-$bluegrotto: #3c678a
+$maincolor: rgb(46, 21, 52)
+$secondarycolor: rgb(95, 64, 103)
+$lightcolor: rgb(237, 229, 239)
+$grey: rgb(79, 79, 79)
 
 *
     font-family: 'Montserrat', sans-serif
@@ -11,10 +10,36 @@ $bluegrotto: #3c678a
     padding: 0
 
 header
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $maincolor
+
+.brand
+    cursor: pointer
+    height: 50px
+    width: 50px
+    padding-left: 5px
+
+ul
+    margin: 10px
+    list-style-type: none
+    overflow: hidden
+    background-color: $maincolor
+
+li
+    float: left
+
+li a
+    display: block
+    color: $lightcolor
     text-align: center
-    padding: 25px
-    background-color: $darkblue
-    color: $mistyblue
+    text-decoration: none
+    padding: 15px
+    border-radius: 10px
+
+li a:hover
+    background-color: $secondarycolor
 
 .title
     font-size: 35px
@@ -25,19 +50,15 @@ header
     font-size: 22px
     display: inline-block
 
-.divider1
-    width: 100%
-    height: 8px
-    background-color: $babyblue
-
 body
-    background-color: $mistyblue
-    color: $mistyblue
+    background-color: $lightcolor
+    color: $lightcolor
 
 footer
     position: fixed
     bottom: 0%
+    width: 100%
     text-align: center
     padding: 25px
-    background-color: $darkblue
-    color: $mistyblue
+    background-color: $maincolor
+    color: $lightcolor
